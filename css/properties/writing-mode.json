@@ -4,6 +4,7 @@
       "writing-mode": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/writing-mode",
+          "spec_url": "https://drafts.csswg.org/css-writing-modes/#block-flow",
           "support": {
             "chrome": [
               {
@@ -66,11 +67,17 @@
                 ]
               }
             ],
-            "ie": {
-              "prefix": "-ms-",
-              "version_added": "9",
-              "notes": "Internet Explorer's implementation differs from the specification."
-            },
+            "ie": [
+              {
+                "version_added": "9",
+                "notes": "Internet Explorer's implementation differs from the specification."
+              },
+              {
+                "prefix": "-ms-",
+                "version_added": "9",
+                "notes": "Internet Explorer's implementation differs from the specification."
+              }
+            ],
             "opera": [
               {
                 "version_added": "35"
@@ -248,7 +255,6 @@
                 "version_added": "43"
               },
               "ie": {
-                "prefix": "-ms-",
                 "version_added": "9"
               },
               "opera": {

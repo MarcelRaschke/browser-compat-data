@@ -15,6 +15,9 @@
           },
           "firefox": [
             {
+              "version_added": "75"
+            },
+            {
               "version_added": "63",
               "flags": [
                 {
@@ -37,6 +40,9 @@
             }
           ],
           "firefox_android": [
+            {
+              "version_added": "79"
+            },
             {
               "version_added": "63",
               "flags": [
@@ -69,10 +75,10 @@
             "version_added": false
           },
           "safari": {
-            "version_added": false
+            "version_added": "13.1"
           },
           "safari_ios": {
-            "version_added": false
+            "version_added": "13.4"
           },
           "samsunginternet_android": {
             "version_added": "6.0"
@@ -103,6 +109,9 @@
             },
             "firefox": [
               {
+                "version_added": "75"
+              },
+              {
                 "version_added": "63",
                 "flags": [
                   {
@@ -125,6 +134,9 @@
               }
             ],
             "firefox_android": [
+              {
+                "version_added": "79"
+              },
               {
                 "version_added": "63",
                 "flags": [
@@ -157,10 +169,10 @@
               "version_added": false
             },
             "safari": {
-              "version_added": false
+              "version_added": "13.1"
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "13.4"
             },
             "samsunginternet_android": {
               "version_added": "8.0"

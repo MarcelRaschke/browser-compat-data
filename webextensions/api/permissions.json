@@ -20,6 +20,9 @@
               },
               "opera": {
                 "version_added": true
+              },
+              "safari": {
+                "version_added": "14"
               }
             }
           }
@@ -42,6 +45,9 @@
               },
               "opera": {
                 "version_added": true
+              },
+              "safari": {
+                "version_added": "14"
               }
             }
           }
@@ -57,14 +63,17 @@
                 "version_added": "79"
               },
               "firefox": {
-                "version_added": false,
-                "notes": "There is a <a href='https://github.com/bfred-it/chrome-permissions-events-polyfill'>polyfill available</a>."
+                "version_added": "77",
+                "notes": "There is a <a href='https://github.com/bfred-it/chrome-permissions-events-polyfill'>polyfill</a> available for earlier versions."
               },
               "firefox_android": {
                 "version_added": false
               },
               "opera": {
                 "version_added": true
+              },
+              "safari": {
+                "version_added": "14"
               }
             }
           }
@@ -80,14 +89,17 @@
                 "version_added": "79"
               },
               "firefox": {
-                "version_added": false,
-                "notes": "There is a <a href='https://github.com/bfred-it/chrome-permissions-events-polyfill'>polyfill available</a>."
+                "version_added": "77",
+                "notes": "There is a <a href='https://github.com/bfred-it/chrome-permissions-events-polyfill'>polyfill</a> available for earlier versions."
               },
               "firefox_android": {
                 "version_added": false
               },
               "opera": {
                 "version_added": true
+              },
+              "safari": {
+                "version_added": "14"
               }
             }
           }
@@ -110,6 +122,9 @@
               },
               "opera": {
                 "version_added": true
+              },
+              "safari": {
+                "version_added": "14"
               }
             }
           }
@@ -132,6 +147,10 @@
               },
               "opera": {
                 "version_added": true
+              },
+              "safari": {
+                "version_added": "14",
+                "notes": "Removing <code>&lt;all_urls&gt;</code> or <code>*://*/*</code> origins will remove previously granted permission to request specific origin patterns and will stop automatically prompting the user for access to any visited website via the extension's access popover in the toolbar."
               }
             }
           }
@@ -146,36 +165,27 @@
               "edge": {
                 "version_added": "79"
               },
-              "firefox": [
-                {
-                  "version_added": "55",
-                  "notes": [
-                    "The user will be prompted again for permissions that have been previously granted and then removed.",
-                    "It's not possible to request permissions from a popup or a sidebar document."
-                  ]
-                },
-                {
-                  "version_added": "56",
-                  "version_removed": "61",
-                  "notes": "It's not possible to request permissions from an options page that's embedded in about:addons. To request permissions from an options page, set the <code>open_in_tab</code> property in the <code>options_ui</code> manifest key, so the options page opens in its own tab."
-                }
-              ],
-              "firefox_android": [
-                {
-                  "version_added": "55",
-                  "notes": [
-                    "The user will be prompted again for permissions that have been previously granted and then removed.",
-                    "It's not possible to request permissions from a popup or a sidebar document."
-                  ]
-                },
-                {
-                  "version_added": "56",
-                  "version_removed": "61",
-                  "notes": "It's not possible to request permissions from an options page that's embedded in about:addons. To request permissions from an options page, set the <code>open_in_tab</code> property in the <code>options_ui</code> manifest key, so the options page opens in its own tab."
-                }
-              ],
+              "firefox": {
+                "version_added": "55",
+                "notes": [
+                  "It's not possible to request permissions from a sidebar document (<a href='https://bugzil.la/1493396'>bug 1493396</a>).",
+                  "Before version 75, permissions cannot be requested from popup panels (see <a href='https://bugzil.la/1432083'>bug 1432083</a>).",
+                  "Before version 61, permissions cannot be requested from options pages embedded in <code>about:addons</code> (see <a href='https://bugzil.la/1382953'>bug 1382953</a>)."
+                ]
+              },
+              "firefox_android": {
+                "version_added": true
+              },
               "opera": {
                 "version_added": true
+              },
+              "safari": {
+                "version_added": "14",
+                "notes": [
+                  "Requesting <code>&lt;all_urls&gt;</code> or <code>*://*/*</code> origins will grant permission to request specific origin patterns and automatically prompt the user for access to any visited website via the extension's access popover in the toolbar.",
+                  "The user will be prompted again for permissions that have been previously granted and then removed.",
+                  "Supported permissions will be granted without prompting the user. Only specific origin patterns will prompt the user."
+                ]
               }
             }
           }

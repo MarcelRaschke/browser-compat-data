@@ -56,13 +56,13 @@
               "version_added": "74"
             },
             "firefox_android": {
-              "version_added": false
+              "version_added": "79"
             },
             "ie": {
               "version_added": false
             },
             "nodejs": {
-              "version_added": false
+              "version_added": "14.0.0"
             },
             "opera": [
               {
@@ -80,16 +80,16 @@
               }
             ],
             "opera_android": {
-              "version_added": false
+              "version_added": "57"
             },
             "safari": {
-              "version_added": false
+              "version_added": "13.1"
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "13.4"
             },
             "samsunginternet_android": {
-              "version_added": false
+              "version_added": "13.0"
             },
             "webview_android": {
               "version_added": "80"
